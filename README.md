@@ -1,8 +1,12 @@
 <div align = "center">
+  
   # Software-Design-and-Architecture
+  
 </div>
-  #Hadi Raza
-Creator Principle
+
+  # Hadi Raza
+  
+# Creator Principle
 Definition: The Creator Principle states that a class should be responsible for creating instances of classes that it closely uses or aggregates. In simpler terms, if a class A contains or is closely associated with class B, then class A is a good candidate to create instances of class B.
 
 # When to Use the Creator Principle:
@@ -23,11 +27,11 @@ ShoppingCart: Contains multiple LineItem objects and is responsible for creating
 LineItem Class:
 •	Contains fields for productName, quantity, and price.
 •	Has a constructor to initialize these fields and a method totalPrice() to calculate the total price for that item.
-# ShoppingCart Class:
+ ShoppingCart Class:
 •	Contains a list of LineItem objects.
 •	The addLineItem method creates a new LineItem using the Creator Principle and adds it to the list.
 •	The totalCartValue method iterates through all the LineItem instances to calculate the total cost of the cart.
-# Main Class:
+Main Class:
 •	Demonstrates how to create a ShoppingCart, add items to it, and print the total value of the cart.
 Benefits:
 This implementation clearly demonstrates the Creator Principle in Java, maintaining encapsulation and clarity regarding the responsibilities of each class. The ShoppingCart class is responsible for creating and managing LineItem instances, leading to a more organized and maintainable codebase.
